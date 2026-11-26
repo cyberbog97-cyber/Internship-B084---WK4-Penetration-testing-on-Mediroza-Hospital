@@ -131,7 +131,7 @@ Although SQLmap did not independently confirm an injection during this particula
 
 It is important to distinguish the two results: the manual test was successful, while the SQLmap scan did not confirm the vulnerability. 
 
-Evidence: 
+
  
  
 
@@ -162,7 +162,8 @@ Potential Impact:
 The hospital should avoid relying on weak or easily recoverable PDF passwords as its main method of protecting sensitive documents. Strong, unique passwords and appropriate encryption should be used. Access to patient reports should be controlled through secure authentication and authorisation mechanisms. 
  
 
-**3.4 Milestone****3–Directory Enumeration and Discovery of Staff Salaries and Shareholder Information**
+**3.4 Milestone**
+**3–Directory Enumeration and Discovery of Staff Salaries and Shareholder Information**
 
 For the third milestone, I used Dirsearch to continue examining the website for exposed directories and files. 
 

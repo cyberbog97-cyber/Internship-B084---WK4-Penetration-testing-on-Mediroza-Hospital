@@ -2,10 +2,15 @@
 **Mediroza General Hospital – Week 4 Practical**
 
 **Prepared by**: Olusoji Samuel
+
 **Target Website**: https://medirozahospital.com 
+
 **Date**: 26 November 2026 
+
 **Client:** Medizora Hospital
+
 **Assessment** Type: Black-Box Penetration Testing 
+
 **Duration:** 5 Days 
 
 **LIABILITY DISCLAIMER**
@@ -44,18 +49,15 @@ Overall, the practical demonstrated weaknesses involving authentication, access 
 **2.1 Scope of Assessment**
 The assessment was conducted against the following target: 
 
-**Organisation:** Mediroza General Hospital                                                                                                                                                          
-**Website:** https://medirozahospital.com                                                                                                                                                                                                            
-**Assessment Type**: Black-box penetration testing                                                                                                                                                                                                    
+**Organisation:** Mediroza General Hospital    
+**Website:** https://medirozahospital.com
+**Assessment Type**: Black-box penetration testing   
 **Duration:** Five days 
 
-The practical covered three main milestones: 
-
-Gaining initial access to the patient portal and retrieving three patient laboratory reports. 
-
-Extracting and recovering the passwords protecting the retrieved PDF files. 
-
-Investigating the website for staff salary information and shareholder details. 
+* The practical covered three main milestones: 
+* Gaining initial access to the patient portal and retrieving three patient laboratory reports. 
+* Extracting and recovering the passwords protecting the retrieved PDF files. 
+* Investigating the website for staff salary information and shareholder details. 
 
 The assessment followed the authorised scope provided for the practical. Testing was limited to the specified target and did not involve social engineering or denial-of-service activities. 
 
@@ -249,21 +251,27 @@ The risk ratings reflect the potential impact of the findings demonstrated durin
 Based on the findings from the assessment, the following actions are recommended: 
  
 **5.1 Fix the SQL Injection Weakness**
+
 The hospital should review the patient's portal's login functionality and ensure that all database queries use parameterized statements. User input should never be directly incorporated into SQL queries. 
  
 **5.2 Improve Patient Portal Access Controls**
+
 Access to patient records should require proper authentication and authorisation. The hospital should also review existing user permissions to ensure that individuals can only access information relevant to their roles. 
 
 **5.3 Strengthen PDF Document Protection**
+
 Sensitive PDF documents should be protected using strong encryption and secure password practices. However, document encryption should be supported by proper access controls rather than used as the only security measure. 
 
 **5.4 Remove or Restrict Outdated Files**
+
 The old patch discovered during directory enumeration should be reviewed. Outdated patches, unused files, and unnecessary backups should be removed or restricted to prevent unauthorized access. 
 
 **5.5 Protect Confidential Organizational Information**
+
 Staff salaries, shareholder details and other internal records should not be stored in publicly accessible directories. Appropriate authentication and authorization controls should be applied to all sensitive resources. 
  
 **5.6 Conduct Regular Security Assessments**
+
 The organization should carry out regular security reviews of its website and web server. These assessments should include directory enumeration, authentication testing, configuration reviews, and checks for exposed files. 
 
  
